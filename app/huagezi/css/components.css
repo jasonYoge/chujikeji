@@ -20,6 +20,10 @@ html, body {
     font-size: 4vw;
 }
 
+a {
+    display: block;
+}
+
 .title {
     font-size: 200%;
     line-height: 2;
@@ -46,6 +50,7 @@ html, body {
     line-height: 3.6;
     width: 100%;
     font-size: 90%;
+    padding: 10px 0;
 }
 
 .list-item + .list-item {
@@ -54,9 +59,6 @@ html, body {
 
 .list-item-title, .list-item-btn {
     padding: 0 .7em;
-}
-
-.list-item-title {
 }
 
 .list-item-btn {
@@ -78,3 +80,36 @@ html, body {
 .weui-btn_confirm {
     background: #0593d3;
 }
+
+.form {
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.login {
+    width: 100%;
+    border-width: 0;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.login:active, .login:visited {
+    outline: none;
+    border-width: 0;
+}
+
+.login + .login {
+    margin-top: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    padding: 0 10px;
+}
+

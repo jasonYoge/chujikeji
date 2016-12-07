@@ -8,12 +8,15 @@
     <link rel="stylesheet" type="text/css" href="./css/components.css">
 </head>
 <body>
-<h1 class="title">后台管理系统（运营）</h1>
+<h1 class="title">后台管理系统（班主任）</h1>
 <form class="form" action="#">
     <input name="user" class="login" placeholder="电话/邮箱"></input>
     <input name="password" class="login" placeholder="密码"></input>
     <button class="weui-btn weui-btn_primary" style="margin-top: 15px;">登录</button>
-    <button class="weui-btn weui-btn_confirm">忘记密码</button>
+    <div style="display: flex;">
+        <button class="weui-btn weui-btn_confirm" style="width: 47.5%;margin-top: 15px;">注册</button>
+        <button class="weui-btn weui-btn_warn" style="width: 47.5%;margin-left: 5%;">忘记密码</button>
+    </div>
 </form>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
