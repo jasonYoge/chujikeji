@@ -74,3 +74,7 @@ html, body {
 .left {
     float: left;
 }
+
+.weui-btn_confirm {
+    background: #0593d3;
+}
