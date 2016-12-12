@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>make-class</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+    <link rel="stylesheet" type="text/css" href="./css/making-class.css">
+</head>
+<body>
+<h1 class="title">设置推送时间：</h1>
+<p class="desc">#为制作完成的课程设置推送时间。</p>
+<ul id="list" class="list">
+    <!-- <li class="list-item clearfix">
+        <div class="list-item-title left">
+            <p>第十五课：《XXXX》</p>
+        </div>
+        <a href="#" class="list-item-btn right">立即推送</a>
+        <a href="#" class="list-item-btn right">设置推送时间</a>
+    </li> -->
+</ul>
+<!-- <div id="mask" class="mask"></div> -->
+<div id="picker_panel" class="picker hide">
+    <h3>推送时间</h3>
+    <div class="picker-panel">
+        <span id="year_month_day">2016-16-20</span>
+        <span id="hours">10</span>:
+        <span id="minites">25</span>:
+        <span id="seconds">15</span>
+    </div>
+    <div class="picker-btn-group">
+        <a href="javascript:;" class="picker-btn" id="cancel_btn">取消</a>
+        <a href="javascript:;" class="picker-btn" id="confirm_btn" style="color: #0BB20C;">确定</a>
+    </div>
+</div>
+<div id="toast" class="weui-toast">
+    <i class="weui-icon-warn weui-icon_toast" style="color: #eee;"></i>
+    <p class="weui-toast__content">还没有课程</p>
+</div>
+
+<div id="toast_success" class="weui-toast" style="display: none;">
+    <i class="weui-icon-success-no-circle weui-icon_toast" style="color: #eee;"></i>
+    <p class="weui-toast__content">发送成功</p>
+</div>
+
+</body>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/weui.min.js"></script>
+<script type="text/javascript" src="./js/fetch-class.js"></script>
+<script type="text/javascript" src="./js/making-class.js"></script>
+</html>
