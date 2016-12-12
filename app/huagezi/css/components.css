@@ -17,7 +17,8 @@ html {overflow-y: scroll;}
 
 html, body {
     background: #f8f8f8;
-    font-size: 4vw;
+    font-size: 16px;
+    font-family: '微软雅黑';
 }
 
 a {
@@ -60,6 +61,16 @@ a {
     padding: 0 .7em;
 }
 
+.list-item-title {
+    width: 40%;
+}
+
+.list-item-title p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .list-item-btn {
     color: blue;
 }
@@ -78,6 +89,11 @@ a {
 
 .weui-btn_confirm {
     background: #0593d3;
+}
+
+.weui-btn_confirm:avtive {
+    color: rgba(255, 255, 255, 0.6);
+    background: #059300;
 }
 
 .form {
@@ -112,3 +128,103 @@ a {
     padding: 0 10px;
 }
 
+a:active, a:visited, a:link {
+    text-decoration: none;
+}
+
+.mask {
+    z-index: 10;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.weui-toast {
+    padding-top: 10px;
+    display: none;
+}
+/*--------------components new----------------*/
+
+.header {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.header-back-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header-back-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-title {
+    margin-left: 45px;
+}
+
+.header-title h1 {
+    font-size: 24px;
+}
+
+.header-desc {
+    font-size: 16px;
+}
+
+.list-img {
+    display: flex;
+    /*width: 100%;*/
+    padding: 5px 5px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.list-img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.list-hd {
+    width: 50px;
+    height: 40px;
+}
+
+.list-bd {
+    flex: 1;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.list-bd p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-ft {
+    width: 25px;
+    height: 35px;
+}
+
+.list-ft img {
+    width: 100%;
+    height: 100%;
+}
