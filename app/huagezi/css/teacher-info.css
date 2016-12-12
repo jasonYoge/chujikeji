@@ -13,7 +13,7 @@ header {
 }
 
 .header-left {
-	flex: 0.43;
+	flex: 0.40;
 }
 
 .header-user {
@@ -28,7 +28,7 @@ header {
 }
 
 .header-right {
-	flex: 0.57;
+	flex: 0.60;
 }
 
 .header-list-left, .header-list-right {

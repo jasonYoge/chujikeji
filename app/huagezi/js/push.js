@@ -25,11 +25,12 @@ $(function () {
 			var html = '';
 			//	拉取数据渲染
 			res.body.forEach(function (data) {
-				html+= '<li class="list-item clearfix">'
-        			+  '<div class="list-item-title left">'
+				html+= '<li class="list-item">'
+        			+  '<div class="list-item-title">'
         			+  '<p>' + data.bigTitle + ':《' + data.smallTitle + '》</p>'
-        			+  '</div><a href="javascript:;" data-id=' + data.curriculumId + ' class="list-item-btn set-time-immediately right">立即推送</a>'
-        			+  '<a href="javascript:;" data-id=' + data.curriculumId + ' class="list-item-btn set-time right">设置推送时间</a>';
+        			+  '</div><div class="list-item-btn-group"><a href="javascript:;" data-id=' + data.curriculumId + ' class="list-item-btn set-time">设置推送时间</a>'
+        			+  '<a href="javascript:;" data-id=' + data.curriculumId + ' class="list-item-btn set-time-immediately">立即推送</a>'
+                                            + '</div></li>';
 			});
 
 			$list.html(html);
@@ -93,7 +94,7 @@ $(function () {
 		$.ajax({
 			url: 'http://182.92.10.18:8080/Huagezi/api/update/pushDate',
 			type: 'POST',
-			data: bojj, 
+			data: bojj,
   			contentType: 'application/json',
     		success: function (res) {
     			console.log(123);
